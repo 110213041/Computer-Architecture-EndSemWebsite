@@ -932,7 +932,7 @@ public class Hello { // Class Name首字大寫
 </template>
 
 <script>
-// import "highlight.js/lib/common";
+import "highlight.js/lib/common";
 import hljsVuePlugin from "@highlightjs/vue-plugin";
 import HeaderTemplate from "@/components/HeaderTemplate.vue";
 import TableOfContentSidebar from "@/components/TableOfContentSidebar.vue";
