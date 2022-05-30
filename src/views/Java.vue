@@ -100,9 +100,9 @@ export default {
     margin-bottom: 25rem;
 }
 
-:deep(.article-container) {
-    /*  */
-}
+/* :deep(.article-container) {
+    
+} */
 
 :deep(h2) {
     /* border: 1px solid black; */
