@@ -4,6 +4,7 @@
         <span class="line"></span>
         <span class="line"></span>
     </div>
+    <router-link to="/" class="toggleBtn toggleBtn-2"> </router-link>
     <div id="mySidenav" class="sidenav" style="width: 0">
         <a
             id="crossBtn"
@@ -104,9 +105,19 @@ export default {
     cursor: pointer;
 }
 
+.toggleBtn-2 {
+    left: 100px;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-image: url("@/assets/home.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: hsl(0, 0%, 95%);
+}
+
 .line {
     border: 2.5px solid black;
-    width: 3rem;
+    width: 2.5rem;
     margin-top: 0.25rem;
     margin-bottom: 0.25rem;
 }
@@ -154,6 +165,7 @@ export default {
     top: 0px;
     right: 10px;
     font-size: 36px;
+    padding: 8px;
 }
 
 .sidenav .btn {

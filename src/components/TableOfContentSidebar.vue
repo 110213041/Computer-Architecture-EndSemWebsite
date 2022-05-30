@@ -1,7 +1,10 @@
 <template>
-    <div class="toggleBtn" @click="linkNavControl()">目錄</div>
+    <div class="toggleBtn" id="tocToggleBtn" @click="linkNavControl()">
+        {{ tocBtnText }}
+        <span> &nbsp;目錄 </span>
+    </div>
     <aside id="asideContainer" style="transition: 125ms">
-        <div id="fooo" style="opacity: 1; transition: 125ms">
+        <div id="tocWrapper" style="opacity: 1; transition: 125ms">
             <template v-for="(item, index) in allHeaders">
                 <a
                     v-if="item.headerLevel === 2"
@@ -36,6 +39,7 @@ export default {
     data() {
         return {
             currentSection: "",
+            tocBtnText: "隱藏",
         };
     },
     mounted() {
@@ -67,10 +71,12 @@ export default {
                 });
         },
         linkNavControl() {
-            if (fooo.style.opacity === "1") {
-                fooo.style.opacity = "0";
+            if (tocWrapper.style.opacity === "1") {
+                tocWrapper.style.opacity = "0";
+                this.tocBtnText = "展開";
             } else {
-                fooo.style.opacity = "1";
+                tocWrapper.style.opacity = "1";
+                this.tocBtnText = "隱藏";
             }
         },
     },
@@ -85,8 +91,8 @@ export default {
     align-items: center;
     top: -10px;
     right: 10px;
-    width: 5rem;
-    height: 2.5rem;
+    width: 8rem;
+    height: 3rem;
     border: 1px solid black;
     border-radius: 10px;
     cursor: pointer;

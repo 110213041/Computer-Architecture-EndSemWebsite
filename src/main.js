@@ -3,5 +3,9 @@ import App from "./App.vue";
 import router from "./router";
 
 import "highlight.js/styles/github-dark-dimmed.css";
+import hljsVuePlugin from "@highlightjs/vue-plugin";
 
-createApp(App).use(router).mount("#app");
+const app = createApp(App);
+app.use(router);
+app.use(hljsVuePlugin);
+app.mount("#app");
