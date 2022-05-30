@@ -87,9 +87,12 @@ export default {
 :deep(.chapter-container) {
     margin: 0 20%;
     display: flex;
+    /* border: 5px solid black; */
 }
 :deep(.chapter-article) {
     width: 85%;
+    /* border-width: 1rem; */
+    /* border-image: linear-gradient(#f6b73c, #4d9f0c) 30; */
 }
 
 :deep(.chapter-article div:last-child) {
@@ -98,7 +101,9 @@ export default {
 }
 
 :deep(.article-container) {
+    /*  */
 }
+
 :deep(h2) {
     /* border: 1px solid black; */
     border-bottom: 3px solid hsl(240, 100%, 65%);
@@ -115,8 +120,17 @@ export default {
     /* border-radius: 10px; */
     padding: 0.25rem;
     padding-left: 0.5rem;
+    border-bottom: 1.5px solid hsl(240, 100%, 65%);
 }
 
+:deep(.img-container) {
+    display: flex;
+    justify-content: center;
+}
+
+:deep(.img-container > img) {
+    width: 80%;
+}
 :deep(.code-container) {
     display: flex;
     justify-content: left;

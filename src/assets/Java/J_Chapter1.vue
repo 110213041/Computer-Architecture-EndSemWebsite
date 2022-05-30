@@ -1377,8 +1377,5 @@ export default {
     mounted() {
         this.$emit("allHeaders", this.allHeaders);
     },
-    updated() {
-        this.$emit("allHeaders", this.allHeaders);
-    },
 };
 </script>

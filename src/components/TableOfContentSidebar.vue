@@ -41,9 +41,6 @@ export default {
     mounted() {
         this.linkActive();
     },
-    // updated() {
-    //     this.linkActive();
-    // },
     methods: {
         linkActive() {
             const headTwo = document.querySelectorAll(
@@ -94,6 +91,20 @@ export default {
     border-radius: 10px;
     cursor: pointer;
     user-select: none;
+    transform: scale(0.9);
+    opacity: 0.75;
+    transition: 100ms;
+}
+
+.toggleBtn:hover {
+    border: 2px solid black;
+    transform: scale(1);
+    opacity: 1;
+}
+
+.toggleBtn:active {
+    /* border: 2px solid black; */
+    transform: scale(0.8);
 }
 
 #crossBtn {

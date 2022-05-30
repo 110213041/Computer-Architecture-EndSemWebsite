@@ -1,5 +1,9 @@
 <template>
-    <div class="toggleBtn" @click="navControl()">目錄</div>
+    <div class="toggleBtn" @click="navControl()">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+    </div>
     <div id="mySidenav" class="sidenav" style="width: 0">
         <a
             id="crossBtn"
@@ -88,13 +92,31 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     top: 10px;
     left: 10px;
     width: 5rem;
     height: 2.5rem;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     border-radius: 10px;
+    transform: scale(0.9);
+    transition: 100ms;
     cursor: pointer;
+}
+
+.line {
+    border: 2.5px solid black;
+    width: 3rem;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+}
+
+.toggleBtn:hover {
+    transform: scale(1);
+}
+
+.toggleBtn:active {
+    transform: scale(0.8);
 }
 
 .sidenav {
@@ -121,6 +143,10 @@ export default {
 
 .sidenav a:hover {
     color: #111;
+}
+
+.sidenav a:active {
+    transform: scale(0.8);
 }
 
 .sidenav .sideNavName {
