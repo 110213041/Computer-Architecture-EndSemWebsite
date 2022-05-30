@@ -159,9 +159,11 @@ aside a.active {
 .asideLinkH2 {
     padding-left: 2rem;
     font-size: 0.9rem;
+    /* font-size: 16px; */
 }
 .asideLinkH3 {
     padding-left: 4rem;
     font-size: 0.8rem;
+    /* font-size: 16px; */
 }
 </style>
