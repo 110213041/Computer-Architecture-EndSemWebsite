@@ -633,7 +633,7 @@ public class Pascal {
 </template>
 
 <script>
-import hljs from "highlight.js/lib/common";
+// import "highlight.js/lib/common";
 import hljsVuePlugin from "@highlightjs/vue-plugin";
 import TableOfContentSidebar from "@/components/TableOfContentSidebar.vue";
 import HeaderTemplate from "@/components/HeaderTemplate.vue";
